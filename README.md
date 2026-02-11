@@ -1,7 +1,5 @@
 # React Resume Maker  📄
-
-My first real React project! I built this interactive React Resume maker where users can create, edit, and preview their professional resumes in real-time. It was an exciting challenge that really helped me understand how React works.
-
+An interactive React Resume maker where users can create, edit, and preview their professional resumes in real-time. 
 ## Live Demo
 
 [Insert your demo video or GIF here]
@@ -24,14 +22,11 @@ My first real React project! I built this interactive React Resume maker where u
 
 ## About The Project
 
-This was my introduction to React development as part of The Odin Project's curriculum. I wanted to create something practical that would help me understand core React concepts like components, state, and props - and that I (and others) could actually use.
-The idea was simple: let users input their personal info, education, and work experience, then display it all in a clean, professional format. 
+This was an introductory project to React development as part of The Odin Project's curriculum. I wanted to create something practical that would help me understand core React concepts like components, state, and props - and that I (and others) could actually use. And let users input their personal info, education, and work experience, then display it all in a clean, professional format. 
 
 ---
 
 ##  Features
-
-Here's what I managed to build into this app:
 
 - **Personal Information Section**
   - Users can add their name, email, and phone number
@@ -133,12 +128,12 @@ npm run build
 - 
 - **State mutation**
 - Sometimes data would just... vanish when I least expected it
-- Turned out I was mutating state directly instead of creating new copies
+- Turned out I was mutating the state directly instead of creating new copies
 - **Solution:** Started using the spread operator.
 
-**The State Management (Lifting up state)**
-- This one took me a while. Switching between edit and view modes were not working
-- The problem: My states were not managed as per react conventions. I was not following the **"lift up state"** convention
+**The State Management (Lifting up the state)**
+- This one took me a while. Switching between edit and view modes was not working
+- The problem: My states were not managed as per React conventions. I was not following the **"lift up state"** convention
 - **Solution:** I learned to use controlled components and keep all important data in the parent state
 
 ---
