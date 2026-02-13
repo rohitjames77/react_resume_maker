@@ -37,9 +37,10 @@ const tester = totalProgressPercentCalc()
   
   return (
   <div id="" className="flex flex-col  items-center w-full h-[10vh] bg-gray-100 text-9x1 text-gray-900 font-[roboto] text-lg gap-x-2">
+    
     <div
     id="progress-bar"
-    className=" flex flex-row  items-center w-full h-full bg-gray-100 text-9x1 text-gray-900 rounded-r-lg font-[roboto] text-lg gap-x-2"
+    className=" flex flex-row  items-center w-full h-full bg-gray-200 p-2 text-9x1 text-gray-900 rounded-r-lg font-[roboto] text-lg gap-x-2"
     >
 
     <h1 id="progress-header " className="font-[roboto] font-medium text-3xl text-gray-500 ">Your Progress so Far</h1>
