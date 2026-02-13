@@ -20,7 +20,7 @@ export default function PersonalForm({ personalInfo, setPersonalInfo }) {
           required
         />
 
-        <label htmlFor="last-name" className="font-[roboto] font-medium text-3xl">Last Name</label>
+        <label htmlFor="lastName" className="font-[roboto] font-medium text-3xl">Last Name</label>
         <input
           type="text"
           maxLength={30}
