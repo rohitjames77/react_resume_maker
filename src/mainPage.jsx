@@ -1,12 +1,14 @@
 import { useState } from "react";
-import MainForm from "./form";
-import ProgressBar from "./progressBar";
-import ShowCasePage from "./showCasePage";
-import FormForwardButton from "./changeForm";
+import ProgressBar from "./progress-header/progressBar";
+import PersonalForm from "./personal/personalForm";
+import EducationForm from "./education/educationForm";
+import WorkExperienceForm from "./work-experience/workExperienceForm";
+import SummaryForm from "./personal/Summary";
+import ResumeTemplate1 from "./templates/ResumeTemplate1";
 
 export default function MainPage() {
   const [formId, setFormId] = useState(0);
-  const idArr = ["Education", "Work experience", "Summary","Go Back"];
+  const [image, setImage] = useState(null);
 
   const [personalInfo, setPersonalInfo] = useState({
     firstName: "",
@@ -27,7 +29,6 @@ export default function MainPage() {
     endDate: "",
     location: "",
   });
-  
 
   const [workExperience, setWorkexp] = useState({
     jobTitle: "",
@@ -39,47 +40,58 @@ export default function MainPage() {
   });
 
   const [summary, setSummary] = useState("");
-  const [addEduFields,setAddEduFields]=useState(false);
-  const [addWorkExp, setAddWorkExp] = useState(false);
+ 
 
   return (
-    <div id="main-page-container" className="bg-indigo-300 h-screen w-screen flex flex-row ">
-      <div id="progess-form-container" className="  flex flex-col h-[99vh] mt-1 w-1/2 ">
+    <div
+      id="main-page-container"
+      className="bg-gray-400 h-screen w-screen flex flex-row "
+    >
+      <div
+        id="progess-form-container"
+        className="grid grid-cols-10 grid-rows-10 h-[95vh] w-1/2 m-8 bg-white rounded-lg overflow-hidden "
+      >
         <ProgressBar
           personalInfo={personalInfo}
           educationInfo={educationInfo}
           workExperience={workExperience}
           summary={summary}
+          image={image}
+          setImage={setImage}
         />
-        <MainForm
-          formId={formId}
-          setFormId={setFormId}
-          personalInfo={personalInfo}
-          setPersonalInfo={setPersonalInfo}
-          educationInfo={educationInfo}
-          setEducationInfo={setEducationInfo}
-          workExperience={workExperience}
-          setWorkexp={setWorkexp}
-          summary={summary}
-          setSummary={setSummary}
-          addWorkExp={addWorkExp}
-          setAddWorkExp={setAddWorkExp}
-          addEduFields={addEduFields}
-          setAddEduFields={setAddEduFields}
-        />
-        <FormForwardButton
-          formId={formId}
-          setFormId={setFormId}
-          idArr={idArr}
-        />
+        <div
+          id="all-form-container"
+          className="col-start-1 col-end-11 row-start-3 row-end-11 overflow-hidden h-full w-full overflow-y-scroll "
+        >
+          <PersonalForm
+            personalInfo={personalInfo}
+            setPersonalInfo={setPersonalInfo}
+          />
+          <EducationForm
+            personalInfo={personalInfo}
+            formId={formId}
+            setFormId={setFormId}
+            educationInfo={educationInfo}
+            setEducationInfo={setEducationInfo}
+          
+          />
+          <WorkExperienceForm
+            personalInfo={personalInfo}
+            setPersonalInfo={setPersonalInfo}
+            workExperience={workExperience}
+            setWorkexp={setWorkexp}
+          />
+          <SummaryForm summary={summary} setSummary={setSummary} />
+        </div>
       </div>
-      <ShowCasePage personalInfo={personalInfo}
-          educationInfo={educationInfo}
-          workExperience={workExperience}
-          summary={summary}
-           addWorkExp={addWorkExp}
-           addEduFields={addEduFields}
-         />
+      <ResumeTemplate1
+        personalInfo={personalInfo}
+        educationInfo={educationInfo}
+        workExperience={workExperience}
+        summary={summary}
+  
+        image={image}
+      />
     </div>
   );
 }
