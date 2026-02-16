@@ -159,6 +159,6 @@ npm run build
 I'm learning web development and documenting my journey. This was my first React project, and I'm proud of how far I've come!
 
 - GitHub: [@rohitjames77](https://github.com/rohitjames77)
-- LinkedIn:(www.linkedin.com/in/rohit-james-2b43433b0)
+- LinkedIn:(www.linkedin.com/in/rohitjames77)
 
 ---
