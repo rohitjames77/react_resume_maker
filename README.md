@@ -1,8 +1,11 @@
-# React Resume Maker  📄
+# React Resume Maker  
 An interactive React Resume maker where users can create, edit, and preview their professional resumes in real-time. 
 ## Live Demo
 
-[Insert your demo video or GIF here]
+
+https://github.com/user-attachments/assets/37e52722-1312-438b-a4e1-a9c60804302c
+
+
 
 **Live Site:** [https://curious-cendol-7209e9.netlify.app/]
 
@@ -156,6 +159,6 @@ npm run build
 I'm learning web development and documenting my journey. This was my first React project, and I'm proud of how far I've come!
 
 - GitHub: [@rohitjames77](https://github.com/rohitjames77)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- LinkedIn: [Your LinkedIn](www.linkedin.com/in/rohit-james-2b43433b0)
 
 ---
