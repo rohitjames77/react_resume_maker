@@ -47,10 +47,6 @@ This was an introductory project to React development as part of The Odin Projec
   - This was tricky! Users can toggle between editing and viewing their CV
   - All data stays intact when switching modes 
   
-- **Responsive Design**
-  - Works on mobile devices too
-  - I spent time making sure it looks professional across different screen sizes
-
 ---
 
 ##  Technologies Used
@@ -109,16 +105,12 @@ npm run build
 
 ### The Wins 
 
-**Finally "Getting" State Management**
+**State Management**
 - Before this project, state and props were just abstract concepts. Now I actually understand them!
 - I learned how to lift state up when multiple components need the same data
 - Passing functions down through props to update parent state became second nature
 
-**Making Edit Mode Work**
-- I'm really proud of how smoothly the edit/view mode transitions work
-- Creating components that could handle both states was a fun puzzle to solve
-
-**Building a Clean Component Structure**
+**Clean Component Structure**
 - Breaking everything into logical components felt natural by the end
 - I learned that smaller, focused components are way easier to debug
 
@@ -148,7 +140,6 @@ npm run build
 - [ ] **Local Storage** - Save progress so users don't lose their work if they close the tab
 - [ ] **Better Validation** - Add helpful error messages when users miss required fields
 - [ ] **Drag and Drop** - Let users reorder their experience and education entries
-- [ ] **Profile Picture Upload** - Because a photo makes CVs more personal
 - [ ] **Dark Mode** - Because who doesn't love dark mode?
 
 
